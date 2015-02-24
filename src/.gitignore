@@ -2,6 +2,6 @@
 *.ipr
 *.hws
 
-out/*
-eclipse/*
-gradle/*
+out/
+eclipse/
+gradle/
