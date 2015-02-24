@@ -1,0 +1,6 @@
+*.iml
+*.ipr
+*.hws
+out/production/LazerTech/*
+out/production/LazerTech/com/pzev/lazertech/*
+eclipse/*
