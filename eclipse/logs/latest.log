@@ -1,0 +1,54 @@
+[21:35:44] [main/INFO]: Setting user: Player725
+[21:35:45] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:35:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LazerTech
+[21:35:51] [Sound Library Loader/INFO]: Sound engine started
+[21:35:52] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:35:52] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:35:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LazerTech
+[21:35:53] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:35:53] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:35:54] [Sound Library Loader/INFO]: Sound engine started
+[21:36:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:36:24] [Server thread/INFO]: Generating keypair
+[21:36:24] [Server thread/INFO]: Converting map!
+[21:36:24] [Server thread/INFO]: Scanning folders...
+[21:36:24] [Server thread/INFO]: Total conversion count is 0
+[21:36:25] [Server thread/INFO]: Preparing start region for level 0
+[21:36:25] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:36:26] [Server thread/INFO]: Player725[local:E:d85ddca4] logged in with entity id 0 at (-373.5, 4.0, 291.5)
+[21:36:26] [Server thread/INFO]: Player725 joined the game
+[21:36:30] [Server thread/INFO]: Saving and pausing game...
+[21:36:30] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Overworld
+[21:36:30] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Nether
+[21:36:30] [Server thread/INFO]: Saving chunks for level 'testing stuff'/The End
+[21:36:43] [Server thread/INFO]: [Player725: Set the time to 5000]
+[21:36:43] [Client thread/INFO]: [CHAT] Set the time to 5000
+[21:36:53] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
+[21:36:54] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
+[21:36:57] [Server thread/INFO]: [Player725: Game rule has been updated]
+[21:36:58] [Client thread/INFO]: [CHAT] Game rule has been updated
+[21:37:07] [Client thread/INFO]: [CHAT] /gamemode, /gamerule
+[21:37:08] [Client thread/INFO]: [CHAT] /gamemode, /gamerule
+[21:37:10] [Client thread/INFO]: [CHAT] doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops
+[21:37:11] [Client thread/INFO]: [CHAT] doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops
+[21:37:11] [Client thread/INFO]: [CHAT] doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops
+[21:37:12] [Client thread/INFO]: [CHAT] doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops
+[21:37:15] [Server thread/INFO]: [Player725: Game rule has been updated]
+[21:37:15] [Client thread/INFO]: [CHAT] Game rule has been updated
+[21:37:24] [Server thread/INFO]: Player725 has just earned the achievement [Taking Inventory]
+[21:37:24] [Client thread/INFO]: [CHAT] Player725 has just earned the achievement [Taking Inventory]
+[21:37:26] [Server thread/INFO]: Saving and pausing game...
+[21:37:26] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Overworld
+[21:37:26] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Nether
+[21:37:26] [Server thread/INFO]: Saving chunks for level 'testing stuff'/The End
+[21:37:27] [Server thread/INFO]: Saving and pausing game...
+[21:37:27] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Overworld
+[21:37:27] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Nether
+[21:37:27] [Server thread/INFO]: Saving chunks for level 'testing stuff'/The End
+[21:37:29] [Client thread/INFO]: Stopping!
+[21:37:29] [Server thread/INFO]: Stopping server
+[21:37:29] [Server thread/INFO]: Saving players
+[21:37:29] [Server thread/INFO]: Saving worlds
+[21:37:29] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Overworld
+[21:37:29] [Server thread/INFO]: Saving chunks for level 'testing stuff'/Nether
+[21:37:29] [Server thread/INFO]: Saving chunks for level 'testing stuff'/The End
