@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lazertech",
+  "name": "LazerTech",
+  "description": "This mod uses laser and plasma physics to create a really cool and unique technical mod.  The physics of the lasers, electricity, and plasma in this mod are closely related to the actual behavior of these things.  I have just added some awesome twists to make what humans can't do possible.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Pzev"],
+  "credits": "Created by Pzev",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
