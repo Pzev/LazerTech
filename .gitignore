@@ -3,5 +3,6 @@
 *.hws
 
 out/
+build/
 eclipse/
-gradle/
+.gradle/
