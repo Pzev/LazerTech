@@ -10,6 +10,8 @@ public class ModItems
     public static final ItemLT electricSpear = new ItemElectricSpear();
     public static final ItemLT hammer = new ItemHammer();
     public static final ItemLT pliers = new ItemPliers();
+    public static final ItemLT screwdriver = new ItemScrewdriver();
+
 
     public static void init()
     {
@@ -18,6 +20,8 @@ public class ModItems
         GameRegistry.registerItem(electricSpear, "electricSpear");
         GameRegistry.registerItem(hammer, "hammer");
         GameRegistry.registerItem(pliers, "pliers");
+        GameRegistry.registerItem(screwdriver, "screwdriver");
+
 
     }
 }
