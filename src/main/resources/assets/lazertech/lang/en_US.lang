@@ -4,4 +4,8 @@ item.lazertech:electricSpear.name=Electric Spear
 item.lazertech:hammer.name=Hammer
 item.lazertech:pliers.name=Pliers
 item.lazertech:screwdriver.name=Screwdriver
+item.lazertech:level.name=Level
+item.lazertech:basicTools.name=Basic Tools
+
+
 

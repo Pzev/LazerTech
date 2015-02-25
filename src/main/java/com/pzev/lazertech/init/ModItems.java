@@ -11,6 +11,10 @@ public class ModItems
     public static final ItemLT hammer = new ItemHammer();
     public static final ItemLT pliers = new ItemPliers();
     public static final ItemLT screwdriver = new ItemScrewdriver();
+    public static final ItemLT level = new ItemLevel();
+    public static final ItemLT basicTools = new ItemBasicTools();
+
+
 
 
     public static void init()
@@ -21,6 +25,10 @@ public class ModItems
         GameRegistry.registerItem(hammer, "hammer");
         GameRegistry.registerItem(pliers, "pliers");
         GameRegistry.registerItem(screwdriver, "screwdriver");
+        GameRegistry.registerItem(level, "level");
+        GameRegistry.registerItem(basicTools, "basicTools");
+
+
 
 
     }
