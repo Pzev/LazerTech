@@ -20,6 +20,7 @@ public class ItemElectricSpear extends ItemLT
     }
 
     // Causes item to take 1 damage every time it hits an entity
+    @Override
     public boolean hitEntity(ItemStack p_77644_1_, EntityLivingBase p_77644_2_, EntityLivingBase p_77644_3_)
     {
         p_77644_1_.damageItem(1, p_77644_3_);
@@ -27,7 +28,9 @@ public class ItemElectricSpear extends ItemLT
     }
 
     // Sets the attack damage that it does, 8
+    
     private float ATKDamage = 8.0F;
+    @Override
     public Multimap getItemAttributeModifiers()
     {
         Multimap multimap = super.getItemAttributeModifiers();
