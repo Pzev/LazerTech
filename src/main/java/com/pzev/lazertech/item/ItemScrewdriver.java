@@ -6,6 +6,7 @@ public class ItemScrewdriver extends ItemLT
     {
         super();
         this.setUnlocalizedName("screwdriver");
+        this.maxStackSize = 1;
     }
 
 }

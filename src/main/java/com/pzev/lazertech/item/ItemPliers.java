@@ -6,6 +6,7 @@ public class ItemPliers extends ItemLT
     {
         super();
         this.setUnlocalizedName("pliers");
+        this.maxStackSize = 1;
     }
 
 }

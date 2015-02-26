@@ -6,6 +6,7 @@ public class ItemElectricSpear extends ItemLT
     {
         super();
         this.setUnlocalizedName("electricSpear");
+        this.maxStackSize = 1;
     }
 
 }

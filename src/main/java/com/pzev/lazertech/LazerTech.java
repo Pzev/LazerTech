@@ -1,5 +1,6 @@
 package com.pzev.lazertech;
 import com.pzev.lazertech.handler.ConfigurationHandler;
+import com.pzev.lazertech.init.ModBlocks;
 import com.pzev.lazertech.init.ModItems;
 import com.pzev.lazertech.proxy.IProxy;
 import com.pzev.lazertech.reference.Reference;
@@ -26,6 +27,8 @@ public class LazerTech {
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+        ModBlocks.init();
+
     }
 
     @Mod.EventHandler

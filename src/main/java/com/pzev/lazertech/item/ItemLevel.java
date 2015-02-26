@@ -6,6 +6,7 @@ public class ItemLevel extends ItemLT
     {
         super();
         this.setUnlocalizedName("level");
+        this.maxStackSize = 1;
     }
 
 }

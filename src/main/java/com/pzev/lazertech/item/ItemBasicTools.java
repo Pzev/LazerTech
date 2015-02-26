@@ -6,6 +6,7 @@ public class ItemBasicTools extends ItemLT
     {
         super();
         this.setUnlocalizedName("basicTools");
+        this.maxStackSize = 1;
 }
 
 }
