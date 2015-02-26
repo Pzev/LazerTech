@@ -1,8 +1,11 @@
 package com.pzev.lazertech.item;
 
 import com.google.common.collect.Multimap;
+import com.pzev.lazertech.init.ModItems;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
 public class ItemElectricSpear extends ItemLT
@@ -13,9 +16,17 @@ public class ItemElectricSpear extends ItemLT
         this.setUnlocalizedName("electricSpear");
         this.maxStackSize = 1;
         this.setMaxDamage(1000);
+        this.isDamageable();
     }
 
+    // Causes item to take 1 damage every time it hits an entity
+    public boolean hitEntity(ItemStack p_77644_1_, EntityLivingBase p_77644_2_, EntityLivingBase p_77644_3_)
+    {
+        p_77644_1_.damageItem(1, p_77644_3_);
+        return true;
+    }
 
+    // Sets the attack damage that it does, 8
     private float ATKDamage = 8.0F;
     public Multimap getItemAttributeModifiers()
     {
