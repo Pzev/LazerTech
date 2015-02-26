@@ -1,5 +1,6 @@
 package com.pzev.lazertech.item;
 
+import com.pzev.lazertech.creativetab.CreativeTabLT;
 import com.pzev.lazertech.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemLT extends Item
     public ItemLT()
     {
         super();
+        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
     @Override

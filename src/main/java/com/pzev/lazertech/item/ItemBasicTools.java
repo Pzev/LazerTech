@@ -9,7 +9,6 @@ public class ItemBasicTools extends ItemLT
         super();
         this.setUnlocalizedName("basicTools");
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTabLT.LT_TAB);
 }
 
 }

@@ -10,9 +10,8 @@ public class BlockLaserFurnace extends BlockLT
         super();
         this.setBlockName("laserFurnace");
         this.setBlockTextureName("laserFurnace");
-        this.setHardness(7.0F);
+        this.setHardness(10.0F);
         this.setResistance(10.0F);
         this.setStepSound(soundTypeMetal);
-        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 }

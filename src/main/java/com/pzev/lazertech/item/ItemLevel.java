@@ -9,7 +9,6 @@ public class ItemLevel extends ItemLT
         super();
         this.setUnlocalizedName("level");
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
 }

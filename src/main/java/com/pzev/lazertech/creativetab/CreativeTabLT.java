@@ -7,17 +7,11 @@ import net.minecraft.item.Item;
 
 public class CreativeTabLT
 {
-    public static final CreativeTabs LT_TAB = new CreativeTabs(Reference.MOD_ID)
+    public static final CreativeTabs LT_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
     {
         @Override
         public Item getTabIconItem() {
             return ModItems.electricSpear;
-        }
-
-        @Override
-        public String getTranslatedTabLabel()
-        {
-            return "LazerTech";
         }
     };
 }

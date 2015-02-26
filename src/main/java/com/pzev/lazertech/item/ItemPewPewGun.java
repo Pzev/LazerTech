@@ -9,7 +9,6 @@ public class ItemPewPewGun extends ItemLT
         super();
         this.setUnlocalizedName("pewPewGun");
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
 }

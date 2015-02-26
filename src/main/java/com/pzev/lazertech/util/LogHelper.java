@@ -51,6 +51,4 @@ public class LogHelper
     {
         log(Level.WARN, object);
     }
-
-
 }

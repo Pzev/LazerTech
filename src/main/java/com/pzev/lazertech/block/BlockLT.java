@@ -1,5 +1,6 @@
 package com.pzev.lazertech.block;
 
+import com.pzev.lazertech.creativetab.CreativeTabLT;
 import com.pzev.lazertech.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class BlockLT extends Block
     public BlockLT(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
     public BlockLT()

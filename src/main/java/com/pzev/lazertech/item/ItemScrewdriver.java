@@ -9,7 +9,6 @@ public class ItemScrewdriver extends ItemLT
         super();
         this.setUnlocalizedName("screwdriver");
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
 }
