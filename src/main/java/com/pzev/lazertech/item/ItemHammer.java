@@ -1,5 +1,7 @@
 package com.pzev.lazertech.item;
 
+import com.pzev.lazertech.creativetab.CreativeTabLT;
+
 public class ItemHammer extends ItemLT
 {
     public ItemHammer()
@@ -7,6 +9,7 @@ public class ItemHammer extends ItemLT
         super();
         this.setUnlocalizedName("hammer");
         this.maxStackSize = 1;
+        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
 }

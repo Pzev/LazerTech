@@ -27,6 +27,7 @@ public class LazerTech {
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+
         ModBlocks.init();
 
     }

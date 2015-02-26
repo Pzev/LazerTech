@@ -1,5 +1,7 @@
 package com.pzev.lazertech.item;
 
+import com.pzev.lazertech.creativetab.CreativeTabLT;
+
 public class ItemLevel extends ItemLT
 {
     public ItemLevel()
@@ -7,6 +9,7 @@ public class ItemLevel extends ItemLT
         super();
         this.setUnlocalizedName("level");
         this.maxStackSize = 1;
+        this.setCreativeTab(CreativeTabLT.LT_TAB);
     }
 
 }
