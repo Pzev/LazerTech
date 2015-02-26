@@ -2,6 +2,7 @@ package com.pzev.lazertech;
 import com.pzev.lazertech.handler.ConfigurationHandler;
 import com.pzev.lazertech.init.ModBlocks;
 import com.pzev.lazertech.init.ModItems;
+import com.pzev.lazertech.init.Recipes;
 import com.pzev.lazertech.proxy.IProxy;
 import com.pzev.lazertech.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -35,7 +36,7 @@ public class LazerTech {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+        Recipes.init();
     }
 
     @Mod.EventHandler
