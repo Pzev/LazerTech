@@ -9,4 +9,6 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "com.pzev.lazertech.proxy.ClientProxy";
     public static final String GUI_FACTORY_CLASS = "com.pzev.lazertech.client.gui.GuiFactory";
 
+    public static final String BATTERY = Reference.MOD_ID + ":battery";
+
 }

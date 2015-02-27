@@ -6,7 +6,11 @@ item.lazertech:pliers.name=Pliers
 item.lazertech:screwdriver.name=Screwdriver
 item.lazertech:level.name=Level
 item.lazertech:basicTools.name=Basic Tools
+
 tile.lazertech:laserFurnace.name=Laser Furnace
+tile.lazertech:battery.name=Basic Battery
+
+
 itemGroup.lazertech=LazerTech
 
 
