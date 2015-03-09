@@ -1,6 +1,7 @@
 package com.pzev.lazertech;
 
 import com.pzev.lazertech.handler.ConfigurationHandler;
+import com.pzev.lazertech.handler.GuiHandler;
 import com.pzev.lazertech.init.ModBlocks;
 import com.pzev.lazertech.init.ModItems;
 import com.pzev.lazertech.init.ModTileEntities;
@@ -13,11 +14,15 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 
 public class LazerTech {
+
+    public GuiHandler guiHandler = new GuiHandler();
+
     @Mod.Instance(Reference.MOD_ID)
     public static LazerTech instance;
 
