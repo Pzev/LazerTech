@@ -46,6 +46,7 @@ public class TileEntityBattery extends TileEntity implements ISidedInventory
 
 
 
+
     @Override
     public final boolean isUseableByPlayer(EntityPlayer player) {
         return true;

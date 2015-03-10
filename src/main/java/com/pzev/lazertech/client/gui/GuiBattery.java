@@ -2,6 +2,7 @@ package com.pzev.lazertech.client.gui;
 
 import com.pzev.lazertech.inventory.ContainerBattery;
 import com.pzev.lazertech.tileentity.TileEntityBattery;
+import com.pzev.lazertech.util.LogHelper;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.RenderHelper;
@@ -14,34 +15,27 @@ public class GuiBattery extends GuiContainer
 {
     private static final ResourceLocation gui = new ResourceLocation("lazertech:textures/gui/battery-gui.png");
 
-
     public GuiBattery(InventoryPlayer inventoryPlayer, TileEntityBattery tileEntityBattery)
     {
         super(new ContainerBattery(inventoryPlayer, tileEntityBattery));
     }
 
-
+    /*
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
 
-
     }
-
-    private boolean mouseInside(Slot slot, int x, int y)
-    {
-        return x >= slot.xDisplayPosition && x <= slot.xDisplayPosition + 16 && y >= slot.yDisplayPosition && y <= slot.yDisplayPosition + 16;
-    }
+    **/
 
     @Override
     protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_)
     {
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-        this.mc.renderEngine.bindTexture(gui);
-        int x = (width - xSize) / 2;
-        int y = (height - ySize) / 2;
-        this.drawTexturedModalRect(x, y, 0, 0, xSize, ySize);
-
+        this.mc.getTextureManager().bindTexture(gui);
+        int x = (this.width - this.xSize) / 2;
+        int y = (this.height - this.ySize) / 2;
+        this.drawTexturedModalRect(x, y, 0, 0, this.xSize, this.ySize);
     }
 
 
