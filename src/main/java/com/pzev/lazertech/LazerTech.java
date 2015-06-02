@@ -1,5 +1,6 @@
 package com.pzev.lazertech;
 
+import com.pzev.lazertech.API.Laser;
 import com.pzev.lazertech.handler.ConfigurationHandler;
 import com.pzev.lazertech.handler.LazerTechGuiHandler;
 import com.pzev.lazertech.init.ModBlocks;
@@ -14,6 +15,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = "com.pzev.lazertech.client.gui.GuiFactory")
@@ -51,6 +54,12 @@ public class LazerTech {
     public void postInit(FMLPostInitializationEvent event)
     {
 
+    }
+
+    @SubscribeEvent
+    public void onTick(TickEvent.PlayerTickEvent event)
+    {
+        Laser.renderArchived();
     }
 
 

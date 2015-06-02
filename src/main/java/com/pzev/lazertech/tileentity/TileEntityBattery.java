@@ -10,22 +10,25 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityBattery extends TileEntity implements ISidedInventory
 {
-    private int power = 0;
+    private int power = 100;
     private ItemStack[] inventory = new ItemStack[4];
     private String name = "battery";
 
     public void updateEntity()
     {
        power--;
-        if(power % 100 == 0)
+        if(power == 0)
         {
-            worldObj.createExplosion(null, xCoord+0.5F, yCoord+1.1F, zCoord+0.5F, 1.0F, false);
-
+            //worldObj.createExplosion(null, xCoord+0.5F, yCoord+1.1F, zCoord+0.5F, 1.0F, false);
+            EntityPlayer temp = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, 10);
+            if(worldObj.getClosestPlayer(xCoord, yCoord, zCoord, 10) instanceof EntityPlayer) {
+                temp.addExperienceLevel(1);
+            }
+            power = 100;
 
         }
+
     }
-
-
 
 
 

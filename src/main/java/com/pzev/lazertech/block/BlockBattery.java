@@ -14,6 +14,8 @@ import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
+import java.util.Random;
+
 public class BlockBattery extends BlockLTTileEntity
 {
     public BlockBattery()
@@ -80,6 +82,19 @@ public class BlockBattery extends BlockLTTileEntity
             if (stack != null) {
                 dropBlockAsItem(world, x, y, z, stack);
             }
+        }
+    }
+
+    @Override
+    public void updateTick(World world, int x, int y, int z, Random rand)
+    {
+        if(world.getBlock(x, y + 1, z) == this)
+        {
+
+        }
+        if(world.getBlock(x, y - 1, z) == this)
+        {
+
         }
     }
 

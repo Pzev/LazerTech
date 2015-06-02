@@ -9,6 +9,7 @@ item.lazertech:basicTools.name=Basic Tools
 
 tile.lazertech:laserFurnace.name=Laser Furnace
 tile.lazertech:battery.name=Basic Battery
+tile.lazertech:laserRelay.name=Laser Relay
 
 
 itemGroup.lazertech=LazerTech

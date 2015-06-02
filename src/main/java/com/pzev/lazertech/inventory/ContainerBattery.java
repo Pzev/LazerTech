@@ -52,7 +52,6 @@ public class ContainerBattery extends Container
         }
     }
 
-
     @Override
     public boolean canInteractWith(EntityPlayer player) {
         return battery.isUseableByPlayer(player);
