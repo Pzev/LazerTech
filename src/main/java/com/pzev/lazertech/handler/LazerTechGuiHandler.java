@@ -1,15 +1,12 @@
 package com.pzev.lazertech.handler;
-import java.util.ArrayList;
-import java.util.Collections;
 
 import com.pzev.lazertech.client.gui.GuiBattery;
 import com.pzev.lazertech.inventory.ContainerBattery;
 import com.pzev.lazertech.tileentity.TileEntityBattery;
+import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.network.IGuiHandler;
-import cpw.mods.fml.common.network.NetworkRegistry;
 
 public class LazerTechGuiHandler implements IGuiHandler {
 

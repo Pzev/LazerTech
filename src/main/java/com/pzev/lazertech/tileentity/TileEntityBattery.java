@@ -1,7 +1,5 @@
 package com.pzev.lazertech.tileentity;
 
-import cpw.mods.fml.common.network.ByteBufUtils;
-import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;

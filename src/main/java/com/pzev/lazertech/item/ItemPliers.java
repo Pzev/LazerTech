@@ -1,7 +1,5 @@
 package com.pzev.lazertech.item;
 
-import com.pzev.lazertech.creativetab.CreativeTabLT;
-
 public class ItemPliers extends ItemLT
 {
     public ItemPliers()
