@@ -1,12 +1,10 @@
 package com.pzev.lazertech.item;
 
 import com.google.common.collect.Multimap;
-import com.pzev.lazertech.init.ModItems;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 
 public class ItemElectricSpear extends ItemLT
 {

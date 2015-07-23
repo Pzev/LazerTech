@@ -2,12 +2,11 @@ package com.pzev.lazertech;
 
 import com.pzev.lazertech.API.Laser;
 import com.pzev.lazertech.handler.ConfigurationHandler;
-import com.pzev.lazertech.handler.LazerTechGuiHandler;
 import com.pzev.lazertech.init.ModBlocks;
 import com.pzev.lazertech.init.ModItems;
 import com.pzev.lazertech.init.ModTileEntities;
 import com.pzev.lazertech.init.Recipes;
-import com.pzev.lazertech.proxy.IProxy;
+import com.pzev.lazertech.proxy.CommonProxy;
 import com.pzev.lazertech.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -27,12 +26,11 @@ public class LazerTech {
     public static LazerTech instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    public static IProxy proxy;
+    public static CommonProxy proxy;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, new LazerTechGuiHandler());
+    public void preInit(FMLPreInitializationEvent event) {
+        proxy.preInit();
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
@@ -40,25 +38,23 @@ public class LazerTech {
 
         ModBlocks.init();
         ModTileEntities.init();
-
-
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
+        proxy.init();
         Recipes.init();
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(instance, proxy);
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
+    public void postInit(FMLPostInitializationEvent event) {
 
     }
 
     @SubscribeEvent
-    public void onTick(TickEvent.PlayerTickEvent event)
-    {
+    public void onTick(TickEvent.PlayerTickEvent event) {
         Laser.renderArchived();
     }
 

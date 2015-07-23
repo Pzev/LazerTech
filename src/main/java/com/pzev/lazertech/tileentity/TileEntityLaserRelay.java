@@ -1,7 +1,6 @@
 package com.pzev.lazertech.tileentity;
 
 import com.pzev.lazertech.API.Laser;
-import com.pzev.lazertech.block.BlockLaserRelay;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
@@ -52,19 +51,16 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
     }
 
 
-    public void updateEntity()
-    {
-        for(int x = -10; x <= 10; x++)
-            for(int y = -10; y <= 10; y++)
-                for(int z = -10; z <= 10; z++)
-                {
+    public void updateEntity() {
+        for (int x = -10; x <= 10; x++) {
+            for (int y = -10; y <= 10; y++){
+                for (int z = -10; z <= 10; z++) {
                     TileEntity tempBlock = worldObj.getTileEntity(xCoord + x, yCoord + y, zCoord + z);
-                    if(x != 0 && y != 0 && z != 0)
-                    {}
-                    else if(tempBlock != null && (tempBlock instanceof TileEntityLaserRelay) && this.getConnectedBlock() == 0 && ((TileEntityLaserRelay)tempBlock).getConnectedBlock() == 0)
-                    {
+                    if (x != 0 && y != 0 && z != 0) {
+
+                    } else if (tempBlock != null && (tempBlock instanceof TileEntityLaserRelay) && this.getConnectedBlock() == 0 && ((TileEntityLaserRelay) tempBlock).getConnectedBlock() == 0) {
                         this.setConnectedBlock(1);
-                        ((TileEntityLaserRelay)tempBlock).setConnectedBlock(2);
+                        ((TileEntityLaserRelay) tempBlock).setConnectedBlock(2);
 
                         Laser.archiveLazers(true);
                         Laser.newLazer(xCoord, yCoord, zCoord, xCoord + x, yCoord + y, zCoord + z, 0, 1, 8);
@@ -73,12 +69,13 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
                         System.out.println("updated reLay!");
                     }
                 }
+            }
+        }
     }
 
 
     @Override
-    public void writeToNBT(NBTTagCompound nbt)
-    {
+    public void writeToNBT(NBTTagCompound nbt) {
         super.writeToNBT(nbt);
         nbt.setInteger("connectedBlock", connectedBlock);
         nbt.setIntArray("blockLocation", blockLocation);
@@ -86,8 +83,7 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
     }
 
     @Override
-    public void readFromNBT(NBTTagCompound nbt)
-    {
+    public void readFromNBT(NBTTagCompound nbt) {
         super.readFromNBT(nbt);
         connectedBlock = nbt.getInteger("connectedBlock");
         nbt.getIntArray("blockLocation");
@@ -100,12 +96,12 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
     }
 
     @Override
-    public boolean canInsertItem(int p_102007_1_, ItemStack p_102007_2_, int p_102007_3_) {
+    public boolean canInsertItem(int slot, ItemStack stack, int amount) {
         return false;
     }
 
     @Override
-    public boolean canExtractItem(int p_102008_1_, ItemStack p_102008_2_, int p_102008_3_) {
+    public boolean canExtractItem(int slot, ItemStack stack, int amount) {
         return false;
     }
 
@@ -115,22 +111,22 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
     }
 
     @Override
-    public ItemStack getStackInSlot(int p_70301_1_) {
+    public ItemStack getStackInSlot(int slot) {
         return null;
     }
 
     @Override
-    public ItemStack decrStackSize(int p_70298_1_, int p_70298_2_) {
+    public ItemStack decrStackSize(int slot, int size) {
         return null;
     }
 
     @Override
-    public ItemStack getStackInSlotOnClosing(int p_70304_1_) {
+    public ItemStack getStackInSlotOnClosing(int slot) {
         return null;
     }
 
     @Override
-    public void setInventorySlotContents(int p_70299_1_, ItemStack p_70299_2_) {
+    public void setInventorySlotContents(int slot, ItemStack stack) {
 
     }
 
@@ -150,8 +146,8 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
     }
 
     @Override
-    public boolean isUseableByPlayer(EntityPlayer p_70300_1_) {
-        return false;
+    public boolean isUseableByPlayer(EntityPlayer player) {
+        return true;
     }
 
     @Override
@@ -165,7 +161,7 @@ public class TileEntityLaserRelay extends TileEntity implements ISidedInventory
     }
 
     @Override
-    public boolean isItemValidForSlot(int p_94041_1_, ItemStack p_94041_2_) {
-        return false;
+    public boolean isItemValidForSlot(int slot, ItemStack stack) {
+        return true;
     }
 }
