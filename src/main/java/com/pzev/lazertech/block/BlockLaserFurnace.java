@@ -45,6 +45,16 @@ public class BlockLaserFurnace extends BlockContainer
     }
 
     @Override
+    public int getRenderType() {
+        return -1;
+    }
+
+    @Override
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+
+    @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
         return side == 1 ? this.blockIcon : (side == 0 ? this.blockIcon : (meta == 2 && side == 2 ? face : (meta == 3 && side == 5 ? face : (meta == 0 && side == 3 ? face : (meta == 1 && side == 4 ? face : this.blockIcon)))));
